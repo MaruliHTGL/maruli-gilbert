@@ -52,7 +52,7 @@ const Projects = () => {
       title: "Fraud Detection System",
       type: "Clustering & Classification",
       date: "Jan 2025",
-      description: "Developed tools to detect fraud in bank transactions using clustering and classification techniques.",
+      description: "Developed a tool to detect fraud in bank transactions using clustering and classification techniques.",
       achievements: [
         "Implemented K-means clustering to identify 4 customer segments",
         "Built Random Forest Classifier for fraud detection",
