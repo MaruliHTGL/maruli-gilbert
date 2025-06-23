@@ -100,7 +100,7 @@ const Projects = () => {
         "Analyzed year-over-year sales performance",
         "Provided actionable insights for decision-making"
       ],
-      technologies: ["Google Looker Studio", "Data Visualization", "BI"],
+      technologies: ["Google Looker Studio", "Data Visualization", "Business Intelligence"],
       icon: <BarChart3 className="h-6 w-6" />,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
     }
