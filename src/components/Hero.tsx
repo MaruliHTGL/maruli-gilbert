@@ -2,8 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
-import Maruli from './img/Maruli.JPG';
-
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 px-4 pt-20">
@@ -65,7 +63,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8">
               <img 
-                src={Maruli}
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
                 alt="Maruli Gilbert Cristopel Hutagaol"
                 className="w-full h-full object-cover"
               />
