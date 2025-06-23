@@ -80,8 +80,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p>📧 maruligilbert@outlook.com</p>
-              <p>📱 +62 819 9507 5262</p>
+              <a href="mailto:maruligilbert@outlook.com">
+                <p>📧 maruligilbert@outlook.com</p>
+              </a>
+              <a href="https://wa.me/6281995075262">
+                <p>📱 +62 819 9507 5262</p>
+              </a>
               <p>📍 Surabaya, Indonesia</p>
             </div>
             
