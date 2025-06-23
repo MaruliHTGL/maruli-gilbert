@@ -63,14 +63,14 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Connect With Me</h3>
               <div className="flex gap-4">
                 <a 
-                  href="#" 
+                  href="www.linkedin.com/in/maruligilbert" 
                   className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://github.com/MaruliHTGL" 
                   className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors"
                   aria-label="GitHub"
                 >
