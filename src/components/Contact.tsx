@@ -53,7 +53,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Location</p>
-                    <p className="text-gray-600">Surabaya, Indonesia</p>
+                    <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="text-purple-600 hover:underline">
+                      Surabaya, Indonesia
+                    </a>
                   </div>
                 </div>
               </div>
