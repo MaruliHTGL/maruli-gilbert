@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-            <Button variant="outline" size="lg" className="px-8 py-3">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
             </Button>
@@ -47,17 +47,13 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>+6281995075262</span>
-            </div>
-            <div className="flex gap-4">
-              <a href="mailto:maruligilbert@outlook.com" className="hover:text-blue-600 transition-colors">
-                <Mail className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-blue-600 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-blue-600 transition-colors">
-                <Github className="h-5 w-5" />
+              <a 
+                href="https://wa.me/6281995075262" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors"
+              >
+                +6281995075262
               </a>
             </div>
           </div>
@@ -65,7 +61,7 @@ const Hero = () => {
         
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden">
+            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8">
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
                 alt="Maruli Gilbert Cristopel Hutagaol"

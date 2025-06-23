@@ -47,15 +47,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links - Updated order */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               {[
+                { name: "Home", href: "#home" },
                 { name: "About", href: "#about" },
                 { name: "Skills", href: "#skills" },
-                { name: "Projects", href: "#projects" },
                 { name: "Experience", href: "#experience" },
+                { name: "Projects", href: "#projects" },
                 { name: "Contact", href: "#contact" }
               ].map((link) => (
                 <li key={link.name}>

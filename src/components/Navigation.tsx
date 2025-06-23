@@ -38,11 +38,14 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo - now clickable */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-gray-900">
+            <button
+              onClick={() => scrollToSection('#home')}
+              className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+            >
               MG<span className="text-blue-600">.</span>
-            </h1>
+            </button>
           </div>
 
           {/* Desktop Menu */}

@@ -1,7 +1,8 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Award, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GraduationCap, Award, Users, ExternalLink } from "lucide-react";
 
 const About = () => {
   return (
@@ -33,14 +34,6 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <Card className="text-center p-4">
                 <CardContent className="p-0">
-                  <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3.55</div>
-                  <div className="text-sm text-gray-600">GPA</div>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center p-4">
-                <CardContent className="p-0">
                   <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
                   <div className="text-2xl font-bold text-gray-900">7+</div>
                   <div className="text-sm text-gray-600">Projects</div>
@@ -52,6 +45,14 @@ const About = () => {
                   <Users className="h-8 w-8 text-purple-600 mx-auto mb-2" />
                   <div className="text-2xl font-bold text-gray-900">2+</div>
                   <div className="text-sm text-gray-600">Certifications</div>
+                </CardContent>
+              </Card>
+              
+              <Card className="text-center p-4">
+                <CardContent className="p-0">
+                  <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-gray-900">3.55</div>
+                  <div className="text-sm text-gray-600">GPA</div>
                 </CardContent>
               </Card>
             </div>
@@ -94,24 +95,44 @@ const About = () => {
               <div className="space-y-3">
                 <Card className="p-4">
                   <CardContent className="p-0">
-                    <div className="flex items-center gap-3">
-                      <Award className="h-5 w-5 text-green-600" />
-                      <div>
-                        <p className="font-medium text-gray-900">Data Science</p>
-                        <p className="text-gray-600 text-sm">Digital Skola</p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <Award className="h-5 w-5 text-green-600" />
+                        <div>
+                          <p className="font-medium text-gray-900">Data Science</p>
+                          <p className="text-gray-600 text-sm">Digital Skola</p>
+                        </div>
                       </div>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-1" />
+                        View Credentials
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
                 
                 <Card className="p-4">
                   <CardContent className="p-0">
-                    <div className="flex items-center gap-3">
-                      <Award className="h-5 w-5 text-green-600" />
-                      <div>
-                        <p className="font-medium text-gray-900">Data Entry Specialist</p>
-                        <p className="text-gray-600 text-sm">Digital Skola</p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <Award className="h-5 w-5 text-green-600" />
+                        <div>
+                          <p className="font-medium text-gray-900">Data Entry Specialist</p>
+                          <p className="text-gray-600 text-sm">Digital Skola</p>
+                        </div>
                       </div>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-1" />
+                        View Credentials
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>
