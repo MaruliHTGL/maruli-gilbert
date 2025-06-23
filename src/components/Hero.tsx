@@ -26,13 +26,17 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Me
+            <Button variant="outline" size="lg" className="px-8 py-3">
+              <Linkedin className="mr-2 h-5 w-5" />
+              LinkedIn
             </Button>
             <Button variant="outline" size="lg" className="px-8 py-3">
               <Github className="mr-2 h-5 w-5" />
-              View Projects
+              GitHub
+            </Button>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+              <Mail className="mr-2 h-5 w-5" />
+              Contact Me
             </Button>
           </div>
           
@@ -67,12 +71,6 @@ const Hero = () => {
                 alt="Maruli Gilbert Cristopel Hutagaol"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">3.55</div>
-                <div className="text-sm text-gray-600">GPA</div>
-              </div>
             </div>
           </div>
         </div>

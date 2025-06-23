@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +19,8 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -60,14 +60,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Social Links & CTA */}
+          {/* CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
-              <Github className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </a>
             <Button 
               size="sm" 
               onClick={() => scrollToSection('#contact')}
@@ -105,12 +99,6 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="flex items-center space-x-4 px-3 py-2">
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  <Github className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                </a>
                 <Button 
                   size="sm" 
                   onClick={() => scrollToSection('#contact')}

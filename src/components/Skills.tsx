@@ -1,8 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { Code, Database, BarChart3, Cog } from "lucide-react";
+import { Code, Database, Cog } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -10,40 +9,30 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: "Python", level: 90 },
-        { name: "SQL", level: 85 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MySQL", level: 80 }
-      ]
-    },
-    {
-      title: "Data Science & ML",
-      icon: <BarChart3 className="h-6 w-6" />,
-      skills: [
-        { name: "Machine Learning", level: 88 },
-        { name: "Data Analysis", level: 92 },
-        { name: "NLP", level: 85 },
-        { name: "Model Deployment", level: 82 }
+        { name: "Python", icon: "🐍" },
+        { name: "SQL", icon: "🗃️" },
+        { name: "PostgreSQL", icon: "🐘" },
+        { name: "MySQL", icon: "🗄️" }
       ]
     },
     {
       title: "Tools & Frameworks",
       icon: <Cog className="h-6 w-6" />,
       skills: [
-        { name: "Pandas", level: 90 },
-        { name: "NumPy", level: 88 },
-        { name: "Scikit-Learn", level: 85 },
-        { name: "Streamlit", level: 80 }
+        { name: "Pandas", icon: "🐼" },
+        { name: "NumPy", icon: "🔢" },
+        { name: "Scikit-Learn", icon: "🤖" },
+        { name: "Streamlit", icon: "⚡" }
       ]
     },
     {
       title: "Analytics Tools",
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: "Google Looker Studio", level: 85 },
-        { name: "Tableau", level: 80 },
-        { name: "Excel", level: 88 },
-        { name: "Jupyter Notebook", level: 92 }
+        { name: "Google Looker Studio", icon: "📊" },
+        { name: "Tableau", icon: "📈" },
+        { name: "Excel", icon: "📋" },
+        { name: "Jupyter Notebook", icon: "📓" }
       ]
     }
   ];
@@ -64,7 +53,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {skillCategories.map((category, index) => (
             <Card key={index} className="hover:shadow-lg transition-all duration-300">
               <CardHeader>
@@ -76,15 +65,14 @@ const Skills = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium text-gray-900">{skill.name}</span>
-                      <span className="text-sm text-gray-600">{skill.level}%</span>
+                <div className="grid grid-cols-2 gap-4">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div key={skillIndex} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                      <span className="text-2xl">{skill.icon}</span>
+                      <span className="font-medium text-gray-900 text-sm">{skill.name}</span>
                     </div>
-                    <Progress value={skill.level} className="h-2" />
-                  </div>
-                ))}
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))}

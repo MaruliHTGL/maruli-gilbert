@@ -18,8 +18,8 @@ const Index = () => {
         </section>
         <About />
         <Skills />
-        <Projects />
         <Experience />
+        <Projects />
         <Contact />
       </main>
       <Footer />
