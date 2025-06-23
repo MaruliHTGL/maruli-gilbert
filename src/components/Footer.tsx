@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400">
               <p>📧 <a href="mailto:maruligilbert@outlook.com">maruligilbert@outlook.com</a></p>
               <p>📱 <a href="https://wa.me/6281995075262">+62 819 9507 5262</a></p>
-              <p>📍 Surabaya, Indonesia</p>
+              <p>📍 <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8">Surabaya, Indonesia</a></p>
             </div>
             
             <div className="pt-4">
