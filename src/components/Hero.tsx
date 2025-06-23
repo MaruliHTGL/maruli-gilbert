@@ -43,7 +43,14 @@ const Hero = () => {
           <div className="flex flex-wrap gap-6 items-center justify-center lg:justify-start text-gray-600">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Surabaya, Indonesia</span>
+              <a 
+                href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors"
+              >
+                <span>Surabaya, Indonesia</span>
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
