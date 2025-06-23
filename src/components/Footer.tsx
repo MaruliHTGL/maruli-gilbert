@@ -24,14 +24,14 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://linkedin.com/in/maruligilbert/" 
                 className="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/MaruliHTGL" 
                 className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
                 aria-label="GitHub"
               >
