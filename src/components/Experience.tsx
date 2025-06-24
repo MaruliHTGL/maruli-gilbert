@@ -12,9 +12,9 @@ const Experience = () => {
       duration: "Jun 2025–Jul 2025",
       type: "Internship",
       responsibilities: [
-        "Reformatted raw data into processable data for analysis using Python",
+        "Reformatted 5 raw data into processable data for analysis using Python",
         "Analyzed factors influencing customer purchasing decisions for books, reseller programs, affiliate programs, and partner stores",
-        "Developed and evaluated machine learning models to predict customer conversion to resellers, affiliates, and partner stores"
+        "Developed an AdaBoost classifier model with an accuracy score of 92% and deployed a tool to predict customer conversion to resellers, affiliates, and partner stores"
       ],
       skills: ["Python", "Data Processing", "Machine Learning", "Customer Analytics"],
       icon: <Briefcase className="h-6 w-6" />
