@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
@@ -9,6 +10,9 @@ const Hero = () => {
           <div className="space-y-2">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Maruli Gilbert
+              <span className="block text-3xl lg:text-5xl text-blue-600">
+                Cristopel Hutagaol
+              </span>
             </h1>
             <p className="text-xl lg:text-2xl text-gray-600 font-medium">
               Data Scientist & Machine Learning Engineer
@@ -73,7 +77,7 @@ const Hero = () => {
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8">
               <img 
                 src="/src/components/img/Maruli.JPG" 
-                alt="Maruli Gilbert"
+                alt="Maruli Gilbert Cristopel Hutagaol"
                 className="w-full h-full object-cover"
               />
             </div>
