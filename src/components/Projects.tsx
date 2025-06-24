@@ -36,7 +36,7 @@ const Projects = () => {
       icon: <MessageSquare className="h-6 w-6" />,
       image: "/src/components/img/traveloka.png",
       codeUrl: "https://github.com/MaruliHTGL/NLP-Sentiment-Analysis-of-Traveloka-App-Review",
-      demoUrl: "https://github.com/MaruliHTGL/NLP-Sentiment-Analysis-of-Traveloka-App-Review"
+      demoUrl: "https://travelokareview.streamlit.app/"
     },
     {
       title: "Flight Ticket Price Calculator",
@@ -112,7 +112,7 @@ const Projects = () => {
         "Analyzed year-over-year sales performance",
         "Provided actionable insights for decision-making"
       ],
-      technologies: ["Google Looker Studio", "Data Visualization", "Business Intelligence"],
+      technologies: ["Google Looker Studio", "Data Visualization", "BI"],
       icon: <BarChart3 className="h-6 w-6" />,
       image: "/src/components/img/dashboard.png",
       codeUrl: "https://github.com/MaruliHTGL/Business-Intelligence-E-Commerce-Sales-Dashboard-2022",
