@@ -18,7 +18,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "Jupyter Notebook", "Streamlit", "Scikit-Learn"],
       icon: <TrendingUp className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+      image: "/src/components/img/churn.png",
+      codeUrl: "https://github.com/MaruliHTGL/Binary-Classification-Churn-Prediction",
+      demoUrl: "https://churncustomerprediction.streamlit.app/"
     },
     {
       title: "Traveloka Review Sentiment Analysis",
@@ -32,7 +34,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "NLTK", "Streamlit", "NLP"],
       icon: <MessageSquare className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop"
+      image: "/src/components/img/traveloka.png",
+      codeUrl: "https://github.com/MaruliHTGL/NLP-Sentiment-Analysis-of-Traveloka-App-Review",
+      demoUrl: "https://github.com/MaruliHTGL/NLP-Sentiment-Analysis-of-Traveloka-App-Review"
     },
     {
       title: "Flight Ticket Price Calculator",
@@ -46,7 +50,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "Random Forest", "Streamlit", "Data Analysis"],
       icon: <Calculator className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop"
+      image: "/src/components/img/flight.png",
+      codeUrl: "https://github.com/MaruliHTGL/Regression-Flight-Price",
+      demoUrl: "https://flightpricecalculator.streamlit.app/"
     },
     {
       title: "Fraud Detection System",
@@ -60,7 +66,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "K-means", "Random Forest", "Anomaly Detection"],
       icon: <Shield className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+      image: "/src/components/img/fraud.png",
+      codeUrl: "https://github.com/MaruliHTGL/Clustering-and-Binary-Classification-Fraud-Detection",
+      demoUrl: "https://frauddetector.streamlit.app/"
     },
     {
       title: "Fake News Detection",
@@ -74,7 +82,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "SVM", "NLP", "Text Analysis"],
       icon: <Brain className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop"
+      image: "/src/components/img/news.png",
+      codeUrl: "https://github.com/MaruliHTGL/Binary-Classification-Fake-News",
+      demoUrl: "https://fakenewschecker.streamlit.app/"
     },
     {
       title: "Customer Segmentation",
@@ -88,7 +98,9 @@ const Projects = () => {
       ],
       technologies: ["Python", "K-means", "Decision Tree", "Customer Analytics"],
       icon: <Users className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+      image: "/src/components/img/segmentation.png",
+      codeUrl: "https://github.com/MaruliHTGL/Clustering-and-Multiclass-Classification-Customer-Segmentation",
+      demoUrl: "https://findcustomercluster.streamlit.app/"
     },
     {
       title: "E-Commerce Sales Dashboard",
@@ -102,7 +114,9 @@ const Projects = () => {
       ],
       technologies: ["Google Looker Studio", "Data Visualization", "Business Intelligence"],
       icon: <BarChart3 className="h-6 w-6" />,
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+      image: "/src/components/img/dashboard.png",
+      codeUrl: "https://github.com/MaruliHTGL/Business-Intelligence-E-Commerce-Sales-Dashboard-2022",
+      demoUrl: "https://lookerstudio.google.com/s/r256GdUlv9E"
     }
   ];
 
@@ -160,8 +174,8 @@ const Projects = () => {
                   <ul className="space-y-1">
                     {project.achievements.map((achievement, achIndex) => (
                       <li key={achIndex} className="text-xs text-gray-600 flex items-start gap-2">
-                        <span className="text-blue-600 mt-1">•</span>
-                        {achievement}
+                        <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                        <span>{achievement}</span>
                       </li>
                     ))}
                   </ul>
@@ -177,13 +191,17 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                      <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
+                    <Button size="sm" className="flex-1" asChild>
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </a>
                     </Button>
                   </div>
                 </div>

@@ -11,21 +11,20 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionate data scientist with hands-on experience in machine learning, 
-            data analysis, and model deployment
+            Data Scientist passionate about machine learning, data analysis, and extracting valuable insights from complex datasets.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
               I'm a third-year Informatics student at Sepuluh Nopember Institute of Technology 
               with a profound interest in data science. Through various projects involving 
               regression, classification, clustering, and NLP, I've developed strong analytical 
               skills and technical expertise.
             </p>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
               I graduated from the Data Science Bootcamp at Digital Skola with excellent grades 
               and have practical experience as a Junior Data Scientist intern at Deepublish, 
               where I worked on customer behavior analysis and predictive modeling.
@@ -107,9 +106,16 @@ const About = () => {
                         size="sm" 
                         variant="outline"
                         className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                        asChild
                       >
-                        <ExternalLink className="h-4 w-4 mr-1" />
-                        View Credentials
+                        <a 
+                          href="https://r2.digitalskola.com/certificates/BC/XXX/003-BC-GRD-XXX43-II-2025.png" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-1" />
+                          View Credentials
+                        </a>
                       </Button>
                     </div>
                   </CardContent>
@@ -129,9 +135,16 @@ const About = () => {
                         size="sm" 
                         variant="outline"
                         className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                        asChild
                       >
-                        <ExternalLink className="h-4 w-4 mr-1" />
-                        View Credentials
+                        <a 
+                          href="https://r2.digitalskola.com/certificates/SCr/DET/012-SCr-CPN-DET-V-2025.png" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-1" />
+                          View Credentials
+                        </a>
                       </Button>
                     </div>
                   </CardContent>

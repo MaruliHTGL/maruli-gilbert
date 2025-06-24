@@ -4,8 +4,33 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { firstName, lastName, email, subject, message } = formData;
+    const mailtoLink = `mailto:maruligilbert@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `From: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-6xl mx-auto px-4">
@@ -68,6 +93,8 @@ const Contact = () => {
                   href="https://linkedin.com/in/maruligilbert/" 
                   className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
@@ -75,6 +102,8 @@ const Contact = () => {
                   href="https://github.com/MaruliHTGL" 
                   className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors"
                   aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Github className="h-6 w-6" />
                 </a>
@@ -94,19 +123,19 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">•</span>
+                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
                   <p className="text-gray-700">Strong academic background in Informatics (GPA: 3.55/4.00)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">•</span>
+                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
                   <p className="text-gray-700">Hands-on experience with 7+ data science projects</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">•</span>
+                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
                   <p className="text-gray-700">Proven ability to deploy ML models with high accuracy</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">•</span>
+                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
                   <p className="text-gray-700">Leadership experience and strong communication skills</p>
                 </div>
               </CardContent>
@@ -119,19 +148,31 @@ const Contact = () => {
               <CardTitle className="text-2xl">Send Me a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                       First Name
                     </label>
-                    <Input id="firstName" placeholder="John" />
+                    <Input 
+                      id="firstName" 
+                      placeholder="John" 
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
+                    />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
                       Last Name
                     </label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Input 
+                      id="lastName" 
+                      placeholder="Doe" 
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      required
+                    />
                   </div>
                 </div>
 
@@ -139,14 +180,27 @@ const Contact = () => {
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                     Email Address
                   </label>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" />
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="john.doe@example.com" 
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject
                   </label>
-                  <Input id="subject" placeholder="Let's discuss a project..." />
+                  <Input 
+                    id="subject" 
+                    placeholder="Let's discuss a project..." 
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
 
                 <div>
@@ -157,10 +211,13 @@ const Contact = () => {
                     id="message" 
                     placeholder="Tell me about your project or opportunity..."
                     rows={6}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
 
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
                 </Button>
