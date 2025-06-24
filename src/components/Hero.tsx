@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="flex justify-center lg:justify-start lg:ml-[-20px]">
+        <div className="flex justify-center lg:justify-start lg:ml-[0px]">
           <div className="relative">
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8">
               <img 
