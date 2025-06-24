@@ -48,8 +48,8 @@ const Navigation = () => {
             </button>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:block">
+          {/* Desktop Menu - improved tablet breakpoint */}
+          <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {menuItems.map((item) => (
                 <button
@@ -63,8 +63,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* CTA - improved tablet breakpoint */}
+          <div className="hidden lg:flex items-center space-x-4">
             <Button 
               size="sm" 
               onClick={() => scrollToSection('#contact')}
@@ -75,8 +75,8 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - now shows on tablet too */}
+          <div className="lg:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -88,9 +88,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - improved for tablet */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
               {menuItems.map((item) => (
                 <button
@@ -105,7 +105,7 @@ const Navigation = () => {
                 <Button 
                   size="sm" 
                   onClick={() => scrollToSection('#contact')}
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   Hire Me

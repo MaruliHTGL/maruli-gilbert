@@ -18,10 +18,23 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { firstName, lastName, email, subject, message } = formData;
-    const mailtoLink = `mailto:maruligilbert@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    
+    // Create mailto link with form data
+    const mailtoLink = `mailto:maruligilbert@outlook.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(
       `From: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
+    
+    // Open email client
     window.location.href = mailtoLink;
+    
+    // Reset form after sending
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
