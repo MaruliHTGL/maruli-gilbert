@@ -4,53 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
-import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const { firstName, lastName, email, subject, message } = formData;
-    
-    // Create mailto link with form data
-    const mailtoLink = `mailto:maruligilbert@outlook.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(
-      `From: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Reset form after sending
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm always interested in new opportunities and collaborations. 
+            I'm always interested in new opportunities and collaborations.
             Let's discuss how we can work together!
           </p>
         </div>
@@ -102,8 +64,8 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Connect With Me</h3>
               <div className="flex gap-4">
-                <a 
-                  href="https://linkedin.com/in/maruligilbert/" 
+                <a
+                  href="https://linkedin.com/in/maruligilbert/"
                   className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
                   aria-label="LinkedIn"
                   target="_blank"
@@ -111,8 +73,8 @@ const Contact = () => {
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a 
-                  href="https://github.com/MaruliHTGL" 
+                <a
+                  href="https://github.com/MaruliHTGL"
                   className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors"
                   aria-label="GitHub"
                   target="_blank"
@@ -120,8 +82,8 @@ const Contact = () => {
                 >
                   <Github className="h-6 w-6" />
                 </a>
-                <a 
-                  href="mailto:maruligilbert@outlook.com" 
+                <a
+                  href="mailto:maruligilbert@outlook.com"
                   className="bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition-colors"
                   aria-label="Email"
                 >
@@ -161,31 +123,26 @@ const Contact = () => {
               <CardTitle className="text-2xl">Send Me a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                       First Name
                     </label>
-                    <Input 
-                      id="firstName" 
-                      placeholder="John" 
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <Input id="firstName" name="firstName" placeholder="John" required />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
                       Last Name
                     </label>
-                    <Input 
-                      id="lastName" 
-                      placeholder="Doe" 
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <Input id="lastName" name="lastName" placeholder="Doe" required />
                   </div>
                 </div>
 
@@ -193,41 +150,21 @@ const Contact = () => {
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                     Email Address
                   </label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="john.doe@example.com" 
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <Input id="email" name="email" type="email" placeholder="john.doe@example.com" required />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject
                   </label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Let's discuss a project..." 
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <Input id="subject" name="subject" placeholder="Let's discuss a project..." required />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project or opportunity..."
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <Textarea id="message" name="message" placeholder="Tell me about your project..." rows={6} required />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
