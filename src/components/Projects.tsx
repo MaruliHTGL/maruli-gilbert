@@ -132,7 +132,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 group flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
@@ -163,7 +163,7 @@ const Projects = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 flex-grow flex flex-col">
                 <p className="text-gray-700 text-sm leading-relaxed">
                   {project.description}
                 </p>
@@ -180,29 +180,27 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                <div className="space-y-3">
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <Badge key={techIndex} variant="outline" className="text-xs">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
 
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1" asChild>
-                      <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                    <Button size="sm" className="flex-1" asChild>
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
-                  </div>
+                <div className="flex gap-2 mt-auto pt-4">
+                  <Button size="sm" variant="outline" className="flex-1" asChild>
+                    <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
+                  </Button>
+                  <Button size="sm" className="flex-1" asChild>
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
