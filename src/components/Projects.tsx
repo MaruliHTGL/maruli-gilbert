@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -17,7 +18,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "Jupyter Notebook", "Streamlit", "Scikit-Learn"],
       icon: <TrendingUp className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/churn.png",
       codeUrl: "https://github.com/MaruliHTGL/Binary-Classification-Churn-Prediction",
       demoUrl: "https://churncustomerprediction.streamlit.app/"
     },
@@ -33,7 +34,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "NLTK", "Streamlit", "NLP"],
       icon: <MessageSquare className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/traveloka.png",
       codeUrl: "https://github.com/MaruliHTGL/NLP-Sentiment-Analysis-of-Traveloka-App-Review",
       demoUrl: "https://travelokareview.streamlit.app/"
     },
@@ -49,7 +50,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "Random Forest", "Streamlit", "Data Analysis"],
       icon: <Calculator className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/flight.png",
       codeUrl: "https://github.com/MaruliHTGL/Regression-Flight-Price",
       demoUrl: "https://flightpricecalculator.streamlit.app/"
     },
@@ -65,7 +66,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "K-means", "Random Forest", "Anomaly Detection"],
       icon: <Shield className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/fraud.png",
       codeUrl: "https://github.com/MaruliHTGL/Clustering-and-Binary-Classification-Fraud-Detection",
       demoUrl: "https://frauddetector.streamlit.app/"
     },
@@ -81,7 +82,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "SVM", "NLP", "Text Analysis"],
       icon: <Brain className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/news.png",
       codeUrl: "https://github.com/MaruliHTGL/Binary-Classification-Fake-News",
       demoUrl: "https://fakenewschecker.streamlit.app/"
     },
@@ -97,7 +98,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "K-means", "Decision Tree", "Customer Analytics"],
       icon: <Users className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/segmentation.png",
       codeUrl: "https://github.com/MaruliHTGL/Clustering-and-Multiclass-Classification-Customer-Segmentation",
       demoUrl: "https://findcustomercluster.streamlit.app/"
     },
@@ -113,7 +114,7 @@ const Projects = () => {
       ],
       technologies: ["Google Looker Studio", "Data Visualization", "BI"],
       icon: <BarChart3 className="h-6 w-6" />,
-      image: "/placeholder.svg",
+      image: "/src/components/img/dashboard.png",
       codeUrl: "https://github.com/MaruliHTGL/Business-Intelligence-E-Commerce-Sales-Dashboard-2022",
       demoUrl: "https://lookerstudio.google.com/s/r256GdUlv9E"
     }
