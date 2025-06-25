@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -132,7 +133,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 group flex flex-col">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
@@ -163,32 +164,34 @@ const Projects = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-4 flex-grow flex flex-col">
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  {project.description}
-                </p>
+              <CardContent className="flex flex-col flex-grow">
+                <div className="flex-grow space-y-4">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
 
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900 text-sm">Key Achievements:</h4>
-                  <ul className="space-y-1">
-                    {project.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="text-xs text-gray-600 flex items-start gap-2">
-                        <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
-                        <span>{achievement}</span>
-                      </li>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-gray-900 text-sm">Key Achievements:</h4>
+                    <ul className="space-y-1">
+                      {project.achievements.map((achievement, achIndex) => (
+                        <li key={achIndex} className="text-xs text-gray-600 flex items-start gap-2">
+                          <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
                     ))}
-                  </ul>
+                  </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-
-                <div className="flex gap-2 mt-auto pt-4">
+                <div className="flex gap-2 mt-6 pt-4 border-t border-gray-100">
                   <Button size="sm" variant="outline" className="flex-1" asChild>
                     <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
