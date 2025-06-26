@@ -136,19 +136,19 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                  <span className="text-blue-600 min-w-[4px]">•</span>
                   <p className="text-gray-700">Strong academic background in Informatics (GPA: 3.55/4.00)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                  <span className="text-blue-600 min-w-[4px]">•</span>
                   <p className="text-gray-700">Hands-on experience with 7+ data science projects</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                  <span className="text-blue-600 min-w-[4px]">•</span>
                   <p className="text-gray-700">Proven ability to deploy ML models with high accuracy</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1 min-w-[4px]">•</span>
+                  <span className="text-blue-600 min-w-[4px]">•</span>
                   <p className="text-gray-700">Leadership experience and strong communication skills</p>
                 </div>
               </CardContent>
