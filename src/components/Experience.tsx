@@ -1,4 +1,4 @@
-x  
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Users, Calendar, MapPin } from "lucide-react";
@@ -107,7 +107,7 @@ const Experience = () => {
                       <ul className="space-y-2">
                         {exp.responsibilities.map((resp, respIndex) => (
                           <li key={respIndex} className="text-gray-700 flex items-start gap-3">
-                            <span className="text-blue-600 mt-[1px] text-sm">•</span>
+                            <span className="text-blue-600 mt-[2px] text-sm">•</span>
                             <span className="leading-relaxed">{resp}</span>
                           </li>
                         ))}
