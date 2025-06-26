@@ -107,7 +107,7 @@ const Experience = () => {
                       <ul className="space-y-2">
                         {exp.responsibilities.map((resp, respIndex) => (
                           <li key={respIndex} className="text-gray-700 flex items-start gap-3">
-                            <span className="text-blue-600 mt-[3px] text-sm">•</span>
+                            <span className="text-blue-600 mt-[2px] text-sm">•</span>
                             <span className="leading-relaxed">{resp}</span>
                           </li>
                         ))}
