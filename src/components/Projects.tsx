@@ -123,7 +123,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeInUp">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A showcase of my data science and machine learning projects, 
@@ -133,23 +133,27 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
+            <Card 
+              key={index} 
+              className={`hover:shadow-xl transition-all duration-500 group flex flex-col h-full transform hover:scale-105 animate-fadeInUp`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600">
+                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600 animate-bounce-subtle">
                       {project.icon}
                     </div>
                     <div>
-                      <Badge variant="secondary" className="mb-2">
+                      <Badge variant="secondary" className="mb-2 hover:bg-blue-100 transition-colors duration-300">
                         {project.type}
                       </Badge>
                       <CardTitle className="text-lg leading-tight">
@@ -184,7 +188,11 @@ const Projects = () => {
 
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
+                      <Badge 
+                        key={techIndex} 
+                        variant="outline" 
+                        className="text-xs hover:bg-blue-50 transition-colors duration-300"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -192,13 +200,22 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2 mt-6 pt-4 border-t border-gray-100">
-                  <Button size="sm" variant="outline" className="flex-1" asChild>
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="flex-1 transform hover:scale-105 transition-all duration-300" 
+                    asChild
+                  >
                     <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" className="flex-1" asChild>
+                  <Button 
+                    size="sm" 
+                    className="flex-1 transform hover:scale-105 transition-all duration-300" 
+                    asChild
+                  >
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Demo

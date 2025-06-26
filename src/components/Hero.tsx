@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
@@ -5,39 +6,39 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 px-4 pt-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="text-center lg:text-left space-y-6">
+        <div className="text-center lg:text-left space-y-6 animate-fadeInLeft">
           <div className="space-y-2">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Maruli Gilbert
-              <span className="block text-3xl lg:text-5xl text-blue-600">
+              <span className="block text-3xl lg:text-5xl text-blue-600 animate-fadeInUp animate-delay-200">
                 Cristopel Hutagaol
               </span>
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-600 font-medium">
+            <p className="text-xl lg:text-2xl text-gray-600 font-medium animate-fadeInUp animate-delay-400">
               Data Scientist & Machine Learning Engineer
             </p>
           </div>
           
-          <p className="text-lg text-gray-700 max-w-2xl text-justify">
+          <p className="text-lg text-gray-700 max-w-2xl text-justify animate-fadeInUp animate-delay-600">
             Third-year Informatics student with expertise in data science, machine learning, 
             and data analysis. Passionate about extracting valuable insights and making 
             strategic decisions through advanced analytics.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start animate-fadeInUp animate-delay-800">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 transform hover:scale-105 transition-all duration-300">
               <a href="https://linkedin.com/in/maruligilbert/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3">
+            <Button variant="outline" size="lg" className="px-8 py-3 transform hover:scale-105 transition-all duration-300">
               <a href="https://github.com/MaruliHTGL" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Github className="mr-2 h-5 w-5" />
                 GitHub
               </a>
             </Button>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 transform hover:scale-105 transition-all duration-300">
               <a href="mailto:maruligilbert@outlook.com" className="flex items-center">
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
@@ -45,8 +46,8 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="flex flex-wrap gap-6 items-center justify-center lg:justify-start text-gray-600">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-wrap gap-6 items-center justify-center lg:justify-start text-gray-600 animate-fadeInUp animate-delay-800">
+            <div className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-300">
               <MapPin className="h-4 w-4" />
               <a 
                 href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" 
@@ -57,7 +58,7 @@ const Hero = () => {
                 <span>Surabaya, Indonesia</span>
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-300">
               <Phone className="h-4 w-4" />
               <a 
                 href="https://wa.me/6281995075262" 
@@ -71,9 +72,9 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="flex justify-center lg:justify-start lg:ml-[120px]">
+        <div className="flex justify-center lg:justify-start lg:ml-[120px] animate-fadeInRight">
           <div className="relative">
-            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8">
+            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8 hover:scale-105 transition-transform duration-500 animate-scaleIn">
               <img 
                 src="/Maruli.JPG" 
                 alt="Maruli Gilbert Cristopel Hutagaol"
