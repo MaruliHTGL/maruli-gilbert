@@ -179,7 +179,7 @@ const Projects = () => {
                     <ul className="space-y-1">
                       {project.achievements.map((achievement, achIndex) => (
                         <li key={achIndex} className="text-xs text-gray-600 flex items-start gap-2">
-                          <span className="text-blue-600 mt-[5px] min-w-[4px]">•</span>
+                          <span className="text-blue-600 mt-[10px] min-w-[4px]">•</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
