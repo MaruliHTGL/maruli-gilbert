@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -123,7 +122,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A showcase of my data science and machine learning projects, 
@@ -133,26 +132,26 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
+            <Card key={index} className="hover:shadow-xl transition-all duration-500 group flex flex-col h-full hover:scale-105 animate-[fade-in_0.6s_ease-out] hover:-translate-y-2" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600">
+                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600 transition-all duration-300 group-hover:bg-blue-200 group-hover:scale-110">
                       {project.icon}
                     </div>
                     <div>
-                      <Badge variant="secondary" className="mb-2">
+                      <Badge variant="secondary" className="mb-2 transition-colors duration-300 group-hover:bg-blue-100">
                         {project.type}
                       </Badge>
-                      <CardTitle className="text-lg leading-tight">
+                      <CardTitle className="text-lg leading-tight group-hover:text-blue-600 transition-colors duration-300">
                         {project.title}
                       </CardTitle>
                     </div>
@@ -184,7 +183,7 @@ const Projects = () => {
 
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
+                      <Badge key={techIndex} variant="outline" className="text-xs transition-colors duration-300 hover:bg-blue-50 hover:border-blue-300">
                         {tech}
                       </Badge>
                     ))}
@@ -192,13 +191,13 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2 mt-6 pt-4 border-t border-gray-100">
-                  <Button size="sm" variant="outline" className="flex-1" asChild>
+                  <Button size="sm" variant="outline" className="flex-1 transition-all duration-300 hover:scale-105 hover:shadow-md" asChild>
                     <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" className="flex-1" asChild>
+                  <Button size="sm" className="flex-1 transition-all duration-300 hover:scale-105 hover:shadow-md" asChild>
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Demo
