@@ -123,7 +123,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16 animate-fadeInUp">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A showcase of my data science and machine learning projects, 
@@ -135,25 +135,25 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`hover:shadow-xl transition-all duration-500 group flex flex-col h-full transform hover:scale-105 animate-fadeInUp`}
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`transition-all duration-300 hover:shadow-xl hover:scale-105 group flex flex-col h-full animate-fade-in`}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
               
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600 animate-bounce-subtle">
+                    <div className="bg-blue-100 rounded-lg p-2 text-blue-600">
                       {project.icon}
                     </div>
                     <div>
-                      <Badge variant="secondary" className="mb-2 hover:bg-blue-100 transition-colors duration-300">
+                      <Badge variant="secondary" className="mb-2 transition-colors duration-300 hover:bg-blue-100">
                         {project.type}
                       </Badge>
                       <CardTitle className="text-lg leading-tight">
@@ -191,7 +191,7 @@ const Projects = () => {
                       <Badge 
                         key={techIndex} 
                         variant="outline" 
-                        className="text-xs hover:bg-blue-50 transition-colors duration-300"
+                        className="text-xs transition-colors duration-300 hover:bg-blue-50"
                       >
                         {tech}
                       </Badge>
@@ -203,7 +203,7 @@ const Projects = () => {
                   <Button 
                     size="sm" 
                     variant="outline" 
-                    className="flex-1 transform hover:scale-105 transition-all duration-300" 
+                    className="flex-1 transition-all duration-300 hover:scale-105" 
                     asChild
                   >
                     <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
@@ -213,7 +213,7 @@ const Projects = () => {
                   </Button>
                   <Button 
                     size="sm" 
-                    className="flex-1 transform hover:scale-105 transition-all duration-300" 
+                    className="flex-1 transition-all duration-300 hover:scale-105" 
                     asChild
                   >
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
