@@ -109,7 +109,7 @@ const Projects = () => {
       description: "Developed a dashboard for visualizing e-commerce sales data.",
       achievements: [
         "Created comprehensive sales visualization dashboard",
-        "Analyzed year-over-year sales performance",
+        "Analyzed sales performance over a year",
         "Provided actionable insights for decision-making"
       ],
       technologies: ["Google Looker Studio", "Data Visualization", "BI"],
