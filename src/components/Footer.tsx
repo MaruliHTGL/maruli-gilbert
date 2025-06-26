@@ -80,9 +80,24 @@ const Footer = () => {
           <div className="space-y-4 animate-slide-in-right">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p className="hover:text-white transition-colors duration-300">📧 <a href="mailto:maruligilbert@outlook.com" className="hover:underline">maruligilbert@outlook.com</a></p>
-              <p className="hover:text-white transition-colors duration-300">📱 <a href="https://wa.me/6281995075262" className="hover:underline">+62 819 9507 5262</a></p>
-              <p className="hover:text-white transition-colors duration-300">📍 <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="hover:underline">Surabaya, Indonesia</a></p>
+              <div className="flex items-start gap-2 hover:text-white transition-colors duration-300">
+                <span className="text-lg leading-none mt-0.5">📧</span>
+                <a href="mailto:maruligilbert@outlook.com" className="hover:underline">
+                  maruligilbert@outlook.com
+                </a>
+              </div>
+              <div className="flex items-start gap-2 hover:text-white transition-colors duration-300">
+                <span className="text-lg leading-none mt-0.5">📱</span>
+                <a href="https://wa.me/6281995075262" className="hover:underline">
+                  +62 819 9507 5262
+                </a>
+              </div>
+              <div className="flex items-start gap-2 hover:text-white transition-colors duration-300">
+                <span className="text-lg leading-none mt-0.5">📍</span>
+                <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="hover:underline">
+                  Surabaya, Indonesia
+                </a>
+              </div>
             </div>
             
             <div className="pt-4">

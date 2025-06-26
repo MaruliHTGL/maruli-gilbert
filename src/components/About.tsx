@@ -105,7 +105,7 @@ const About = () => {
                       <Button 
                         size="sm" 
                         variant="outline"
-                        className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-700"
                         asChild
                       >
                         <a 
@@ -134,7 +134,7 @@ const About = () => {
                       <Button 
                         size="sm" 
                         variant="outline"
-                        className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                        className="text-blue-600 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-700"
                         asChild
                       >
                         <a 
