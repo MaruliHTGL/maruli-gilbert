@@ -10,12 +10,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 animate-fade-in">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand & Description */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold">
+          <div className="space-y-4 animate-slide-in-left">
+            <h3 className="text-2xl font-bold hover-scale transition-all duration-300 cursor-default">
               Maruli Gilbert <span className="text-blue-400">Cristopel Hutagaol</span>
             </h3>
             <p className="text-gray-400 leading-relaxed text-justify">
@@ -25,21 +25,21 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="https://linkedin.com/in/maruligilbert/" 
-                className="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-colors"
+                className="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-all duration-300 hover-scale hover-glow"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
                 href="https://github.com/MaruliHTGL" 
-                className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
+                className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-all duration-300 hover-scale hover-glow"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a 
                 href="mailto:maruligilbert@outlook.com" 
-                className="bg-red-600 hover:bg-red-700 p-2 rounded-lg transition-colors"
+                className="bg-red-600 hover:bg-red-700 p-2 rounded-lg transition-all duration-300 hover-scale hover-glow"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links - Updated order */}
-          <div className="space-y-4">
+          <div className="space-y-4 animate-fade-in animate-delay-200">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               {[
@@ -67,7 +67,7 @@ const Footer = () => {
                         element.scrollIntoView({ behavior: 'smooth' });
                       }
                     }}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                    className="text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-1"
                   >
                     {link.name}
                   </button>
@@ -77,12 +77,12 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 animate-slide-in-right">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-3 text-gray-400">
-              <p>📧 <a href="mailto:maruligilbert@outlook.com">maruligilbert@outlook.com</a></p>
-              <p>📱 <a href="https://wa.me/6281995075262">+62 819 9507 5262</a></p>
-              <p>📍 <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8">Surabaya, Indonesia</a></p>
+              <p className="hover:text-white transition-colors duration-300">📧 <a href="mailto:maruligilbert@outlook.com" className="hover:underline">maruligilbert@outlook.com</a></p>
+              <p className="hover:text-white transition-colors duration-300">📱 <a href="https://wa.me/6281995075262" className="hover:underline">+62 819 9507 5262</a></p>
+              <p className="hover:text-white transition-colors duration-300">📍 <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="hover:underline">Surabaya, Indonesia</a></p>
             </div>
             
             <div className="pt-4">
@@ -91,7 +91,7 @@ const Footer = () => {
               </p>
               <Button 
                 size="sm" 
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover-scale hover-glow"
                 onClick={() => {
                   const element = document.querySelector('#contact');
                   if (element) {
@@ -106,11 +106,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-gray-800 pt-8 animate-fade-in animate-delay-400">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2 text-gray-400">
               <span>© {currentYear} Maruli Gilbert Cristopel Hutagaol. Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
+              <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
               <span>in Indonesia</span>
             </div>
             
@@ -118,7 +118,7 @@ const Footer = () => {
               variant="ghost"
               size="sm"
               onClick={scrollToTop}
-              className="text-gray-400 hover:text-white"
+              className="text-gray-400 hover:text-white transition-all duration-300 hover-scale hover:bg-gray-800"
             >
               <ArrowUp className="h-4 w-4 mr-2" />
               Back to Top

@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             I'm always interested in new opportunities and collaborations. 
@@ -57,41 +57,41 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-in-left">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="bg-blue-100 rounded-lg p-3 text-blue-600">
+                <div className="flex items-center gap-4 hover-lift p-3 rounded-lg transition-all duration-300">
+                  <div className="bg-blue-100 rounded-lg p-3 text-blue-600 hover-glow">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <a href="mailto:maruligilbert@outlook.com" className="text-blue-600 hover:underline">
+                    <a href="mailto:maruligilbert@outlook.com" className="text-blue-600 hover:underline transition-colors duration-300">
                       maruligilbert@outlook.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <div className="bg-green-100 rounded-lg p-3 text-green-600">
+                <div className="flex items-center gap-4 hover-lift p-3 rounded-lg transition-all duration-300">
+                  <div className="bg-green-100 rounded-lg p-3 text-green-600 hover-glow">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <a href="https://wa.me/6281995075262" className="text-green-600 hover:underline">
+                    <a href="https://wa.me/6281995075262" className="text-green-600 hover:underline transition-colors duration-300">
                       +62 819 9507 5262
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <div className="bg-purple-100 rounded-lg p-3 text-purple-600">
+                <div className="flex items-center gap-4 hover-lift p-3 rounded-lg transition-all duration-300">
+                  <div className="bg-purple-100 rounded-lg p-3 text-purple-600 hover-glow">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Location</p>
-                    <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="text-purple-600 hover:underline">
+                    <a href="https://maps.app.goo.gl/NMKjrNLZUu9k3ExN8" className="text-purple-600 hover:underline transition-colors duration-300">
                       Surabaya, Indonesia
                     </a>
                   </div>
@@ -104,7 +104,7 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a 
                   href="https://linkedin.com/in/maruligilbert/" 
-                  className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-all duration-300 hover-scale hover-glow"
                   aria-label="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -113,7 +113,7 @@ const Contact = () => {
                 </a>
                 <a 
                   href="https://github.com/MaruliHTGL" 
-                  className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors"
+                  className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-all duration-300 hover-scale hover-glow"
                   aria-label="GitHub"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,7 +122,7 @@ const Contact = () => {
                 </a>
                 <a 
                   href="mailto:maruligilbert@outlook.com" 
-                  className="bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition-colors"
+                  className="bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition-all duration-300 hover-scale hover-glow"
                   aria-label="Email"
                 >
                   <Mail className="h-6 w-6" />
@@ -130,7 +130,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <Card className="bg-white/80 backdrop-blur-sm">
+            <Card className="bg-white/80 backdrop-blur-sm hover-lift animate-scale-in animate-delay-400">
               <CardHeader>
                 <CardTitle className="text-xl">Why Work With Me?</CardTitle>
               </CardHeader>
@@ -156,7 +156,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-white shadow-xl">
+          <Card className="bg-white shadow-xl hover-lift animate-slide-in-right">
             <CardHeader>
               <CardTitle className="text-2xl">Send Me a Message</CardTitle>
             </CardHeader>
@@ -173,6 +173,7 @@ const Contact = () => {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
+                      className="transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
                   <div>
@@ -185,6 +186,7 @@ const Contact = () => {
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
+                      className="transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
                 </div>
@@ -200,6 +202,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
+                    className="transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
@@ -213,6 +216,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
+                    className="transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
@@ -227,10 +231,11 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
+                    className="transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover-scale hover-glow">
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
                 </Button>
