@@ -75,6 +75,7 @@ const About = () => {
                         <p className="text-blue-600 font-medium">
                           Sepuluh Nopember Institute of Technology
                         </p>
+                        <p className="text-gray-600 text-sm">Surabaya, Indonesia</p>
                         <p className="text-gray-600 text-sm">Aug 2022 – Present</p>
                         <p className="text-gray-700 mt-2">GPA: 3.55/4.00</p>
                         <div className="mt-3">
