@@ -6,7 +6,7 @@ import { Briefcase, Users, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Junior Data Scientist Internship",
+      title: "Junior Data Scientist",
       company: "Deepublish",
       location: "Remote",
       duration: "Jun 2025–Jul 2025",
