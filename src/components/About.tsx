@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -29,6 +28,33 @@ const About = () => {
               and have practical experience as a Junior Data Scientist intern at Deepublish, 
               where I worked on customer behavior analysis and predictive modeling.
             </p>
+
+            {/* Statistics Cards moved here */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 animate-fade-in animate-delay-400">
+              <Card className="text-center p-4 hover-lift">
+                <CardContent className="p-0">
+                  <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-gray-900">7+</div>
+                  <div className="text-sm text-gray-600">Projects</div>
+                </CardContent>
+              </Card>
+              
+              <Card className="text-center p-4 hover-lift">
+                <CardContent className="p-0">
+                  <Users className="h-8 w-8 text-purple-600 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-gray-900">2+</div>
+                  <div className="text-sm text-gray-600">Certifications</div>
+                </CardContent>
+              </Card>
+              
+              <Card className="text-center p-4 hover-lift">
+                <CardContent className="p-0">
+                  <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-gray-900">3.55</div>
+                  <div className="text-sm text-gray-600">GPA</div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
           
           <div className="space-y-8 animate-slide-in-right">
@@ -151,33 +177,6 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-
-        {/* Statistics Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 animate-fade-in animate-delay-400">
-          <Card className="text-center p-4 hover-lift">
-            <CardContent className="p-0">
-              <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-gray-900">7+</div>
-              <div className="text-sm text-gray-600">Projects</div>
-            </CardContent>
-          </Card>
-          
-          <Card className="text-center p-4 hover-lift">
-            <CardContent className="p-0">
-              <Users className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-gray-900">2+</div>
-              <div className="text-sm text-gray-600">Certifications</div>
-            </CardContent>
-          </Card>
-          
-          <Card className="text-center p-4 hover-lift">
-            <CardContent className="p-0">
-              <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-gray-900">3.55</div>
-              <div className="text-sm text-gray-600">GPA</div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
