@@ -137,17 +137,6 @@
   }
 }
 
-@keyframes slideOutLeft {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-}
-
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -159,36 +148,25 @@
   }
 }
 
-@keyframes slideOutRight {
+@keyframes slideInDown {
   from {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 0;
+    transform: translateY(-30px);
   }
   to {
-    opacity: 0;
-    transform: translateX(30px);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes scaleOut {
+@keyframes slideOutUp {
   from {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
   to {
     opacity: 0;
-    transform: scale(0.9);
+    transform: translateY(-30px);
   }
 }
 
@@ -204,24 +182,16 @@
   animation: slideInLeft 0.6s ease-out;
 }
 
-.animate-slide-out-left {
-  animation: slideOutLeft 0.6s ease-out;
-}
-
 .animate-slide-in-right {
   animation: slideInRight 0.6s ease-out;
 }
 
-.animate-slide-out-right {
-  animation: slideOutRight 0.6s ease-out;
+.animate-slide-in-down {
+  animation: slideInDown 0.6s ease-out;
 }
 
-.animate-scale-in {
-  animation: scaleIn 0.4s ease-out;
-}
-
-.animate-scale-out {
-  animation: scaleOut 0.4s ease-out;
+.animate-slide-out-up {
+  animation: slideOutUp 0.6s ease-out;
 }
 
 .animate-delay-200 {
@@ -236,11 +206,6 @@
 
 .animate-delay-600 {
   animation-delay: 0.6s;
-  animation-fill-mode: both;
-}
-
-.animate-delay-800 {
-  animation-delay: 0.8s;
   animation-fill-mode: both;
 }
 
