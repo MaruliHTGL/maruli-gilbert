@@ -28,17 +28,17 @@ const Skills = () => {
       title: "Analytics Tools",
       icon: <Database className="h-6 w-6" />,
       skills: [
+        { name: "Jupyter Notebook", icon: "📓" },
+        { name: "Excel", icon: "📋" },
         { name: "Google Looker Studio", icon: "📊" },
         { name: "Tableau", icon: "📈" },
-        { name: "Excel", icon: "📋" },
-        { name: "Jupyter Notebook", icon: "📓" }
       ]
     }
   ];
 
   const coursework = [
     "Data Science", "Machine Learning", "Python", "Model Deployment",
-    "Data Analysis", "Business Intelligence", "SQL", "Data Visualization"
+    "Data Analysis", "SQL", "Business Intelligence", "Data Visualization"
   ];
 
   return (
