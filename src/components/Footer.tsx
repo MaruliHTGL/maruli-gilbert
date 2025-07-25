@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand & Description */}
           <div className="space-y-4 animate-slide-in-left">
-            <h3 className="text-2xl font-bold hover-scale transition-all duration-300 cursor-default">
+            <h3 className="text-2xl font-bold cursor-default">
               Maruli Gilbert <span className="text-blue-400">Cristopel Hutagaol</span>
             </h3>
             <p className="text-gray-400 leading-relaxed text-justify">
