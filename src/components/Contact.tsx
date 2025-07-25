@@ -137,7 +137,7 @@ const Contact = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
-                  <p className="text-gray-700">Strong academic background in Informatics (GPA: 3.55/4.00)</p>
+                  <p className="text-gray-700">Strong academic background in Informatics (GPA: 3.60/4.00)</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
