@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Mail } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 animate-slide-in-down ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg border-b' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -42,9 +43,9 @@ const Navigation = () => {
           <div className="flex-shrink-0 animate-fade-in">
             <button
               onClick={() => scrollToSection('#home')}
-              className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
+              className="text-2xl font-bold text-foreground hover:text-primary transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
             >
-              MG<span className="text-blue-600">.</span>
+              MG<span className="text-primary">.</span>
             </button>
           </div>
 
@@ -55,7 +56,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 hover:drop-shadow-sm animate-slide-in-down"
+                  className="text-muted-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 hover:drop-shadow-sm animate-slide-in-down"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
@@ -66,10 +67,11 @@ const Navigation = () => {
 
           {/* CTA - improved tablet breakpoint with animation */}
           <div className="hidden lg:flex items-center space-x-4 animate-fade-in animate-delay-400">
+            <ThemeToggle />
             <Button 
               size="sm" 
               onClick={() => scrollToSection('#contact')}
-              className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Mail className="mr-2 h-4 w-4" />
               Hire Me
@@ -82,7 +84,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 transition-all duration-300 hover:scale-110"
+              className="text-muted-foreground transition-all duration-300 hover:scale-110"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -92,22 +94,23 @@ const Navigation = () => {
         {/* Mobile Menu - improved for tablet with animations */}
         {isOpen && (
           <div className="lg:hidden animate-slide-in-down">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md rounded-lg mt-2 shadow-lg border">
               {menuItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 hover:scale-105 hover:bg-blue-50 rounded-md animate-fade-in"
+                  className="text-muted-foreground hover:text-primary block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 hover:scale-105 hover:bg-muted/50 rounded-md animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
                 </button>
               ))}
-              <div className="flex items-center space-x-4 px-3 py-2 animate-fade-in animate-delay-600">
+              <div className="flex items-center justify-between px-3 py-2 animate-fade-in animate-delay-600">
+                <ThemeToggle />
                 <Button 
                   size="sm" 
                   onClick={() => scrollToSection('#contact')}
-                  className="bg-blue-600 hover:bg-blue-700 w-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  className="bg-primary hover:bg-primary/90 flex-1 ml-3 transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   Hire Me
