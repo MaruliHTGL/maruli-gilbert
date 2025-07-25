@@ -37,7 +37,7 @@ const About = () => {
             }`}
           >
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I'm a third-year Informatics student at Sepuluh Nopember Institute of Technology 
+              I'm a final-year Informatics student at Sepuluh Nopember Institute of Technology 
               with a profound interest in data science. Through various projects involving 
               regression, classification, clustering, and NLP, I've developed strong analytical 
               skills and technical expertise.
@@ -69,7 +69,7 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <Users className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">2+</div>
+                  <div className="text-2xl font-bold text-gray-900">3+</div>
                   <div className="text-sm text-gray-600">Certifications</div>
                 </CardContent>
               </Card>
@@ -77,7 +77,7 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3.55</div>
+                  <div className="text-2xl font-bold text-gray-900">3.60</div>
                   <div className="text-sm text-gray-600">GPA</div>
                 </CardContent>
               </Card>
@@ -111,7 +111,7 @@ const About = () => {
                         </p>
                         <p className="text-gray-600 text-sm">Surabaya, Indonesia</p>
                         <p className="text-gray-600 text-sm">Aug 2022 – Present</p>
-                        <p className="text-gray-700 mt-2">GPA: 3.55/4.00</p>
+                        <p className="text-gray-700 mt-2">GPA: 3.60/4.00</p>
                         <div className="mt-3">
                           <Badge variant="secondary" className="mr-2 mb-2">
                             Expert Staff GERIGI ITS
@@ -167,7 +167,7 @@ const About = () => {
                   <div className="flex items-center gap-3 w-full">
                     <Award className="h-5 w-5 text-green-600" />
                     <div>
-                      <p className="font-medium text-gray-900">Data Science</p>
+                      <p className="font-medium text-gray-900">Data Science Course</p>
                       <p className="text-gray-600 text-sm">Digital Skola</p>
                     </div>
                   </div>
@@ -189,6 +189,35 @@ const About = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="p-4 hover-lift">
+              <CardContent className="p-0">
+                <div className="flex items-center justify-between flex-col space-y-3">
+                  <div className="flex items-center gap-3 w-full">
+                    <Award className="h-5 w-5 text-green-600" />
+                    <div>
+                      <p className="font-medium text-gray-900">Machine Learning Foundations Training</p>
+                      <p className="text-gray-600 text-sm">AWS Educate</p>
+                    </div>
+                  </div>
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="text-blue-600 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-700 w-full"
+                    asChild
+                  >
+                    <a 
+                      href="https://www.credly.com/badges/400ce34a-0f19-4063-8123-3c0a67798213" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-1" />
+                      View Credentials
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
             
             <Card className="p-4 hover-lift">
               <CardContent className="p-0">
@@ -196,7 +225,7 @@ const About = () => {
                   <div className="flex items-center gap-3 w-full">
                     <Award className="h-5 w-5 text-green-600" />
                     <div>
-                      <p className="font-medium text-gray-900">Data Entry Specialist</p>
+                      <p className="font-medium text-gray-900">Data Entry Specialist Short Course</p>
                       <p className="text-gray-600 text-sm">Digital Skola</p>
                     </div>
                   </div>
