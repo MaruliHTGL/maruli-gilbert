@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
           
           <p className="text-lg text-gray-700 max-w-2xl text-justify animate-fade-in animate-delay-600">
-            Third-year Informatics student with expertise in data science, machine learning, 
+            Final-year Informatics student with expertise in data science, machine learning, 
             and data analysis. Passionate about extracting valuable insights and making 
             strategic decisions through advanced analytics.
           </p>
