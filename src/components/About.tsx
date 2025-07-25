@@ -160,7 +160,7 @@ const About = () => {
           }`}
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Certifications</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card className="p-4 hover-lift">
               <CardContent className="p-0">
                 <div className="flex items-center justify-between flex-col space-y-3">
