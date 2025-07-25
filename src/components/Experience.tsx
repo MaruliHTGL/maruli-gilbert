@@ -13,8 +13,8 @@ const Experience = () => {
       type: "Internship",
       responsibilities: [
         "Reformatted 5 raw data into processable data for analysis using Python",
-        "Analyzed factors influencing customer purchasing decisions for books, reseller programs, affiliate programs, and partner stores",
-        "Developed an AdaBoost classifier model with an accuracy score of 92% and deployed a tool to predict customer conversion to resellers"
+        "Summarized the 3 main factors influencing customer purchasing decisions for books and reseller programs",
+        "Developed a K-Nearest Neighbors (KNN) model with an F1 score of 86% and deployed a tool to predict customer conversion to resellers"
       ],
       skills: ["Python", "Data Processing", "Machine Learning", "Customer Analytics"],
       icon: <Briefcase className="h-6 w-6" />
@@ -30,7 +30,7 @@ const Experience = () => {
       responsibilities: [
         "Publicized post-school life information, including studying in Surabaya, to Saint Thomas 1 Senior High School students",
         "Collaborated with other divisions in organizing IKASATU Surabaya events",
-        "Established relationships with external parties including schools and other IKASATU regions"
+        "Established relationships with external parties, including schools and other IKASATU regions"
       ],
       skills: ["Leadership", "Event Management", "Public Relations", "Team Collaboration"]
     },
@@ -42,7 +42,7 @@ const Experience = () => {
       responsibilities: [
         "Evaluated and recruited 48 new staff members for the Surveyor and License Subdivision",
         "Led a team of 6 staff members during committee activities",
-        "Supervised team activities including surveys and license management for 8 campus venues and facilities"
+        "Supervised team activities, including surveys and license management for 8 campus venues and facilities"
       ],
       skills: ["Team Leadership", "Recruitment", "Project Management", "Supervision"]
     }
