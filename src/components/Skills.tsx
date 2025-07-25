@@ -34,7 +34,7 @@ const Skills = () => {
       skills: [
         { name: "Jupyter Notebook", icon: "📓" },
         { name: "Excel", icon: "📋" },
-        { name: "Google Looker Studio", icon: "📊" },
+        { name: "Looker Studio", icon: "📊" },
         { name: "Tableau", icon: "📈" },
       ]
     }
