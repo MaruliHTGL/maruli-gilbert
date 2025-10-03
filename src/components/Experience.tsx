@@ -18,6 +18,19 @@ const Experience = () => {
       ],
       skills: ["Python", "Data Processing", "Machine Learning", "Customer Analytics"],
       icon: <Briefcase className="h-6 w-6" />
+    },
+    {
+      title: "Artificial Intelligence",
+      company: "PT Salam Pacific Indonesia Lines",
+      location: "Surabaya, Indonesia",
+      duration: "Aug 2025–Jan 2026",
+      type: "Internship",
+      responsibilities: [
+        "Developed 3 automation systems to assist employees in their work",
+        "Improved AI accuracy by 50% in semantic similarity issues in report data"
+      ],
+      skills: ["Python", "Automation System", "Web Development", "Laravel Framework"],
+      icon: <Briefcase className="h-6 w-6" />
     }
   ];
 
