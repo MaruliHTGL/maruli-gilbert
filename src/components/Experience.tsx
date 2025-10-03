@@ -6,6 +6,19 @@ import { Briefcase, Users, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Artificial Intelligence",
+      company: "PT Salam Pacific Indonesia Lines",
+      location: "Surabaya, Indonesia",
+      duration: "Aug 2025–Jan 2026",
+      type: "Internship",
+      responsibilities: [
+        "Developed 3 automation systems to assist employees in their work",
+        "Improved AI accuracy by 50% in semantic similarity issues in report data"
+      ],
+      skills: ["Python", "Automation System", "Web Development", "Laravel Framework"],
+      icon: <Briefcase className="h-6 w-6" />
+    },
+    {
       title: "Junior Data Scientist",
       company: "Deepublish",
       location: "Remote",
@@ -17,19 +30,6 @@ const Experience = () => {
         "Developed a K-Nearest Neighbors (KNN) model with an F1 score of 86% and deployed a tool to predict customer conversion to resellers"
       ],
       skills: ["Python", "Data Processing", "Machine Learning", "Customer Analytics"],
-      icon: <Briefcase className="h-6 w-6" />
-    },
-    {
-      title: "Artificial Intelligence",
-      company: "PT Salam Pacific Indonesia Lines",
-      location: "Surabaya, Indonesia",
-      duration: "Aug 2025–Jan 2026",
-      type: "Internship",
-      responsibilities: [
-        "Developed 3 automation systems to assist employees in their work",
-        "Improved AI accuracy by 50% in semantic similarity issues in report data"
-      ],
-      skills: ["Python", "Automation System", "Web Development", "Laravel Framework"],
       icon: <Briefcase className="h-6 w-6" />
     }
   ];
