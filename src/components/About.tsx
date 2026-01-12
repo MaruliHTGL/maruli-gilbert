@@ -46,7 +46,8 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
               I graduated from the Data Science Bootcamp at Digital Skola with excellent grades 
               and have practical experience as a Junior Data Scientist intern at Deepublish, 
-              where I worked on customer behavior analysis and predictive modeling.
+              where I worked on customer behavior analysis and predictive modeling. I also have experience as an artificial intelligence intern at PT Salam Pacific Indonesia Lines, 
+              where I developed automation systems to improve employee work efficiency.
             </p>
 
             {/* Statistics Cards moved here */}
