@@ -13,8 +13,8 @@ const Experience = () => {
       type: "Internship",
       responsibilities: [
         "Developed 5 automation systems to assist employees in their work",
-        "Improved AI model accuracy by 60% in semantic similarity issues in report data validation",
-        "Increased employee work efficiency by 70% using the developed automation system"
+        "Improved AI model accuracy by 70% in semantic similarity issues in report data validation",
+        "Increased employee work efficiency by 80% using the developed automation system"
       ],
       skills: ["Python", "Automation System", "Web Development", "Laravel Framework"],
       icon: <Briefcase className="h-6 w-6" />
