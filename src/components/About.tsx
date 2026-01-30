@@ -78,7 +78,7 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3.60</div>
+                  <div className="text-2xl font-bold text-gray-900">3.64</div>
                   <div className="text-sm text-gray-600">GPA</div>
                 </CardContent>
               </Card>
