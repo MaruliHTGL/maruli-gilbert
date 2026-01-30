@@ -112,7 +112,7 @@ const About = () => {
                         </p>
                         <p className="text-gray-600 text-sm">Surabaya, Indonesia</p>
                         <p className="text-gray-600 text-sm">Aug 2022 – Present</p>
-                        <p className="text-gray-700 mt-2">GPA: 3.60/4.00</p>
+                        <p className="text-gray-700 mt-2">GPA: 3.64/4.00</p>
                         <div className="mt-3">
                           <Badge variant="secondary" className="mr-2 mb-2">
                             Expert Staff GERIGI ITS
