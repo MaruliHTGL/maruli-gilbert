@@ -110,7 +110,7 @@ const Projects = () => {
       achievements: [
         "Created comprehensive sales visualization dashboard",
         "Analyzed sales performance over a year",
-        "Provided actionable insights for decision-making"
+        "Provided 7 actionable insights for decision-making"
       ],
       technologies: ["Google Looker Studio", "Data Visualization", "BI"],
       icon: <BarChart3 className="h-6 w-6" />,
