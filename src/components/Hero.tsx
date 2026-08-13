@@ -15,15 +15,17 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-gray-600 font-medium animate-fade-in animate-delay-400">
-              Data Scientist & Machine Learning Engineer
+              Data Scientist | Machine Learning & AI Engineer
             </p>
           </div>
           
           <p className="text-lg text-gray-700 max-w-2xl text-justify animate-fade-in animate-delay-600">
-            Final-year Informatics student with expertise in data science, machine learning, 
-            and data analysis. Passionate about extracting valuable insights and making 
-            strategic decisions through advanced analytics.
+            Informatics fresh graduate from Sepuluh Nopember Institute of Technology (GPA 3.66/4.00)
+            with hands-on experience in data science, machine learning, NLP, and AI automation.
+            Passionate about turning data into valuable insights and bridging AI initiatives with
+            strategic business decisions.
           </p>
+
           
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start animate-fade-in animate-delay-800">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 transition-all duration-300 hover:scale-105">
