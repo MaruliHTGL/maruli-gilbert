@@ -23,8 +23,9 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Data Scientist passionate about machine learning, data analysis, and extracting valuable insights from complex datasets.
+            Data Scientist passionate about machine learning, AI automation, and turning complex data into strategic decisions.
           </p>
+
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -37,18 +38,23 @@ const About = () => {
             }`}
           >
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I'm a final-year Informatics student at Sepuluh Nopember Institute of Technology 
-              with a profound interest in data science. Through various projects involving 
-              regression, classification, clustering, and NLP, I've developed strong analytical 
-              skills and technical expertise.
+              I'm an Informatics fresh graduate from Sepuluh Nopember Institute of Technology
+              (GPA 3.66/4.00) with a profound interest in data science, data analysis, and machine
+              learning. Through projects involving regression, classification, clustering, and NLP,
+              I've honed strong analytical skills and technical expertise.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I graduated from the Data Science Bootcamp at Digital Skola with excellent grades 
-              and have practical experience as a Junior Data Scientist intern at Deepublish, 
-              where I worked on customer behavior analysis and predictive modeling. I also have experience as an artificial intelligence intern at PT Salam Pacific Indonesia Lines, 
-              where I developed automation systems to improve employee work efficiency.
+              I graduated from the Data Science Bootcamp at Digital Skola with excellent grades and
+              have practical experience as a Data Scientist Intern at Deepublish (customer behavior
+              analysis and predictive modeling) and as an Artificial Intelligence Intern at PT Salam
+              Pacific Indonesia Lines, where I built automation systems that improved employee
+              efficiency by 80%. I also work as a freelance AI & Machine Learning Tutor, mentoring
+              individuals in NLP and machine learning while guiding the end-to-end development of an
+              AI chatbot platform. I enjoy bridging technical AI/ML initiatives with strategic
+              business objectives and cross-functional project management.
             </p>
+
 
             {/* Statistics Cards moved here */}
             <div 
