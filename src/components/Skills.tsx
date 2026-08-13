@@ -41,8 +41,8 @@ const Skills = () => {
   ];
 
   const coursework = [
-    "Data Science", "Machine Learning", "Python", "Model Deployment",
-    "Data Analysis", "SQL", "Business Intelligence", "Data Visualization", "Management"
+    "Data Science", "Machine Learning", "Model Deployment", "Python", "SQL",
+    "Data Analysis", "Business Intelligence", "Data Visualization", "Management"
   ];
 
 
