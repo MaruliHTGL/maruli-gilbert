@@ -275,7 +275,7 @@ const About = () => {
                     asChild
                   >
                     <a 
-                      href="https://www.udacity.com/certificate" 
+                      href="https://www.udacity.com/certificate/e/c1c78bee-6103-11f0-96d7-3fa7019f83f0" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
