@@ -6,31 +6,45 @@ import { Briefcase, Users, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Artificial Intelligence",
-      company: "PT Salam Pacific Indonesia Lines",
-      location: "Surabaya, Indonesia",
-      duration: "Aug 2025–Jan 2026",
-      type: "Internship",
+      title: "AI & Machine Learning Tutor",
+      company: "Freelance",
+      location: "Surabaya, Indonesia (Hybrid)",
+      duration: "May–Jul 2026",
+      type: "Freelance",
       responsibilities: [
-        "Developed 5 automation systems to assist employees in their work",
-        "Improved AI model accuracy by 70% in semantic similarity issues in report data validation",
-        "Increased employee work efficiency by 80% using the developed automation system"
+        "Provided intensive learning materials and mentoring on Natural Language Processing (NLP), text preprocessing techniques, and machine learning algorithms using Python, NLTK, and Scikit-learn",
+        "Led hands-on sessions on designing and developing an AI chatbot capable of generating 5 dynamic outputs based on text processing",
+        "Designed a functional website with 4 key features to demonstrate AI model implementation interactively"
       ],
-      skills: ["Python", "Automation System", "Web Development", "Laravel Framework"],
+      skills: ["Python", "NLTK", "Scikit-Learn", "NLP", "Mentoring"],
       icon: <Briefcase className="h-6 w-6" />
     },
     {
-      title: "Junior Data Scientist",
+      title: "Artificial Intelligence Intern",
+      company: "PT Salam Pacific Indonesia Lines",
+      location: "Surabaya, Indonesia (On-site)",
+      duration: "Aug 2025–Jan 2026",
+      type: "Internship",
+      responsibilities: [
+        "Designed and implemented 5 automation systems using Python and the Laravel Framework",
+        "Automated manual workflows, resulting in an 80% increase in employee operational efficiency",
+        "Optimized an AI model for semantic similarity to validate company reports, achieving a 70% increase in accuracy"
+      ],
+      skills: ["Python", "Laravel Framework", "Automation System", "Web Development", "NLP"],
+      icon: <Briefcase className="h-6 w-6" />
+    },
+    {
+      title: "Data Scientist Intern",
       company: "Deepublish",
-      location: "Remote",
+      location: "Surabaya, Indonesia (Remote)",
       duration: "Jun 2025–Jul 2025",
       type: "Internship",
       responsibilities: [
-        "Reformatted 5 raw data into processable data for analysis using Python",
-        "Summarized the 3 main factors influencing customer purchasing decisions for books and reseller programs",
-        "Developed a K-Nearest Neighbors (KNN) model with an F1 score of 86% and deployed a tool to predict customer conversion to resellers"
+        "Processed and reformatted 5 raw datasets using Python and NLTK into structured, analysis-ready data",
+        "Analyzed consumer behavior patterns and summarized 3 main factors driving book purchase decisions and customer conversion to resellers",
+        "Developed a K-Nearest Neighbors (KNN) model with an F1-score of 86% and deployed an interactive web-based reseller prediction app using Streamlit"
       ],
-      skills: ["Python", "Data Processing", "Machine Learning", "Customer Analytics"],
+      skills: ["Python", "NLTK", "Machine Learning", "Streamlit", "Customer Analytics"],
       icon: <Briefcase className="h-6 w-6" />
     }
   ];
@@ -43,24 +57,73 @@ const Experience = () => {
       duration: "May 2023–May 2025",
       responsibilities: [
         "Publicized post-school life information, including studying in Surabaya, to Saint Thomas 1 Senior High School students",
-        "Collaborated with other divisions in organizing IKASATU Surabaya events",
-        "Established relationships with external parties, including schools and other IKASATU regions"
+        "Established relationships with external parties, including schools and other IKASATU regions",
+        "Collaborated with other divisions in organizing IKASATU Surabaya events"
       ],
       skills: ["Leadership", "Event Management", "Public Relations", "Team Collaboration"]
     },
     {
       title: "Expert Staff of Surveyor and License",
-      organization: "Generasi Integralistik (GERIGI) ITS",
+      organization: "Generasi Integralistik (GERIGI) ITS 2024",
       location: "Surabaya, Indonesia",
       duration: "May–Aug 2024",
       responsibilities: [
         "Evaluated and recruited 48 new staff members for the Surveyor and License Subdivision",
         "Led a team of 6 staff members during committee activities",
-        "Supervised team activities, including surveys and license management for 8 campus venues and facilities"
+        "Supervised surveys and license management for 8 campus venues and facilities"
       ],
       skills: ["Team Leadership", "Recruitment", "Project Management", "Supervision"]
+    },
+    {
+      title: "Operational Expert Staff",
+      organization: "Schematics ITS 2024",
+      location: "Surabaya, Indonesia",
+      duration: "Feb–Nov 2024",
+      responsibilities: [
+        "Guided staff throughout the committee program",
+        "Provided the necessities needed during the committee program",
+        "Maintained the event to ensure it ran safely and conducively"
+      ],
+      skills: ["Operations", "Staff Guidance", "Event Management"]
+    },
+    {
+      title: "Security and License Staff",
+      organization: "Generasi Integralistik (GERIGI) ITS 2023",
+      location: "Surabaya, Indonesia",
+      duration: "Jul–Aug 2023",
+      responsibilities: [
+        "Managed permits for facilities needed during the committee program",
+        "Ensured a safe event environment, including parking area and event security",
+        "Coordinated with other subdivisions on facility permits"
+      ],
+      skills: ["Coordination", "Licensing", "Event Safety"]
+    },
+    {
+      title: "Equipment, Security, and Licensing Staff",
+      organization: "Schematics ITS 2023",
+      location: "Surabaya, Indonesia",
+      duration: "Feb–Oct 2023",
+      responsibilities: [
+        "Provided the necessary equipment for the committee program",
+        "Managed various licenses for the facilities needed during the program",
+        "Maintained security and conduct during the event"
+      ],
+      skills: ["Logistics", "Licensing", "Event Safety"]
+    },
+    {
+      title: "Security, Facilitator, and Surveillance Staff",
+      organization: "Ini Lho ITS! 2023",
+      location: "Surabaya, Indonesia",
+      duration: "Oct 2022–Feb 2023",
+      responsibilities: [
+        "Surveyed and obtained permits for event venues and other facilities",
+        "Collaborated with various stakeholders, both verbally and in writing, to facilitate the event",
+        "Conducted thorough supervision to ensure the event ran in an orderly and safe manner"
+      ],
+      skills: ["Stakeholder Communication", "Surveying", "Supervision"]
     }
   ];
+
 
   return (
     <section id="experience" className="py-20 bg-gray-50">
