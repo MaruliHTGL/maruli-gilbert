@@ -19,8 +19,7 @@ const Footer = () => {
               Maruli Gilbert <span className="text-blue-400">Cristopel Hutagaol</span>
             </h3>
             <p className="text-gray-400 leading-relaxed text-justify">
-              Data Scientist passionate about machine learning, data analysis, 
-              and extracting valuable insights from complex datasets.
+              Data Scientist passionate about data analysis, machine learning, and turning complex data into strategic decisions.
             </p>
             <div className="flex space-x-4">
               <a 
