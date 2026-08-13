@@ -6,6 +6,18 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 px-4 pt-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center lg:justify-start lg:ml-[120px] animate-slide-in-right">
+          <div className="relative">
+            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8 transition-transform duration-500 hover:scale-105">
+              <img 
+                src="/Maruli.jpeg" 
+                alt="Maruli Gilbert Cristopel Hutagaol"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        
         <div className="text-center lg:text-left space-y-6 animate-slide-in-left">
           <div className="space-y-2">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -70,18 +82,6 @@ const Hero = () => {
               >
                 +6281995075262
               </a>
-            </div>
-          </div>
-        </div>
-        
-        <div className="flex justify-center lg:justify-start lg:ml-[120px] animate-slide-in-right">
-          <div className="relative">
-            <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8 transition-transform duration-500 hover:scale-105">
-              <img 
-                src="/Maruli.JPG" 
-                alt="Maruli Gilbert Cristopel Hutagaol"
-                className="w-full h-full object-cover"
-              />
             </div>
           </div>
         </div>
