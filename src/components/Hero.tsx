@@ -76,7 +76,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-200 to-indigo-300 shadow-2xl overflow-hidden transform -translate-y-8 transition-transform duration-500 hover:scale-105">
               <img 
-                src="/Maruli.JPG" 
+                src="/Maruli.jpeg" 
                 alt="Maruli Gilbert Cristopel Hutagaol"
                 className="w-full h-full object-cover"
               />
