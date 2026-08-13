@@ -76,7 +76,7 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3+</div>
+                  <div className="text-2xl font-bold text-gray-900">4+</div>
                   <div className="text-sm text-gray-600">Certifications</div>
                 </CardContent>
               </Card>
@@ -84,8 +84,9 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3.64</div>
+                  <div className="text-2xl font-bold text-gray-900">3.66</div>
                   <div className="text-sm text-gray-600">GPA</div>
+
                 </CardContent>
               </Card>
             </div>
@@ -111,22 +112,23 @@ const About = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">
-                          Student of Informatics
+                          Bachelor of Informatics
                         </h4>
                         <p className="text-blue-600 font-medium">
                           Sepuluh Nopember Institute of Technology
                         </p>
                         <p className="text-gray-600 text-sm">Surabaya, Indonesia</p>
-                        <p className="text-gray-600 text-sm">Aug 2022 – Present</p>
-                        <p className="text-gray-700 mt-2">GPA: 3.64/4.00</p>
+                        <p className="text-gray-600 text-sm">Aug 2022 – Aug 2026</p>
+                        <p className="text-gray-700 mt-2">GPA: 3.66/4.00</p>
                         <div className="mt-3">
                           <Badge variant="secondary" className="mr-2 mb-2">
-                            Expert Staff GERIGI ITS
+                            Thesis: Oversampling for Academic Risk Prediction
                           </Badge>
                           <Badge variant="secondary" className="mr-2 mb-2">
                             Employee Promotion Classification
                           </Badge>
                         </div>
+
                       </div>
                     </div>
                   </CardContent>
