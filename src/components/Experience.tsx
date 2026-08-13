@@ -64,7 +64,7 @@ const Experience = () => {
     },
     {
       title: "Expert Staff of Surveyor and License",
-      organization: "Generasi Integralistik (GERIGI) ITS 2024",
+      organization: "Generasi Integralistik (GERIGI) ITS",
       location: "Surabaya, Indonesia",
       duration: "May–Aug 2024",
       responsibilities: [
@@ -73,54 +73,6 @@ const Experience = () => {
         "Supervised surveys and license management for 8 campus venues and facilities"
       ],
       skills: ["Team Leadership", "Recruitment", "Project Management", "Supervision"]
-    },
-    {
-      title: "Operational Expert Staff",
-      organization: "Schematics ITS 2024",
-      location: "Surabaya, Indonesia",
-      duration: "Feb–Nov 2024",
-      responsibilities: [
-        "Guided staff throughout the committee program",
-        "Provided the necessities needed during the committee program",
-        "Maintained the event to ensure it ran safely and conducively"
-      ],
-      skills: ["Operations", "Staff Guidance", "Event Management"]
-    },
-    {
-      title: "Security and License Staff",
-      organization: "Generasi Integralistik (GERIGI) ITS 2023",
-      location: "Surabaya, Indonesia",
-      duration: "Jul–Aug 2023",
-      responsibilities: [
-        "Managed permits for facilities needed during the committee program",
-        "Ensured a safe event environment, including parking area and event security",
-        "Coordinated with other subdivisions on facility permits"
-      ],
-      skills: ["Coordination", "Licensing", "Event Safety"]
-    },
-    {
-      title: "Equipment, Security, and Licensing Staff",
-      organization: "Schematics ITS 2023",
-      location: "Surabaya, Indonesia",
-      duration: "Feb–Oct 2023",
-      responsibilities: [
-        "Provided the necessary equipment for the committee program",
-        "Managed various licenses for the facilities needed during the program",
-        "Maintained security and conduct during the event"
-      ],
-      skills: ["Logistics", "Licensing", "Event Safety"]
-    },
-    {
-      title: "Security, Facilitator, and Surveillance Staff",
-      organization: "Ini Lho ITS! 2023",
-      location: "Surabaya, Indonesia",
-      duration: "Oct 2022–Feb 2023",
-      responsibilities: [
-        "Surveyed and obtained permits for event venues and other facilities",
-        "Collaborated with various stakeholders, both verbally and in writing, to facilitate the event",
-        "Conducted thorough supervision to ensure the event ran in an orderly and safe manner"
-      ],
-      skills: ["Stakeholder Communication", "Surveying", "Supervision"]
     }
   ];
 
