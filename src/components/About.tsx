@@ -23,7 +23,7 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Data Scientist passionate about machine learning, AI automation, and turning complex data into strategic decisions.
+            Data Scientist passionate about data analysis, machine learning, and turning complex data into strategic decisions.
           </p>
 
         </div>
@@ -39,7 +39,7 @@ const About = () => {
           >
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
               I'm an Informatics fresh graduate from Sepuluh Nopember Institute of Technology
-              (GPA 3.66/4.00) with a profound interest in data science, data analysis, and machine
+              with a profound interest in data science, data analysis, and machine
               learning. Through projects involving regression, classification, clustering, and NLP,
               I've honed strong analytical skills and technical expertise.
             </p>
@@ -122,10 +122,10 @@ const About = () => {
                         <p className="text-gray-700 mt-2">GPA: 3.66/4.00</p>
                         <div className="mt-3">
                           <Badge variant="secondary" className="mr-2 mb-2">
-                            Thesis: Oversampling for Academic Risk Prediction
+                            Thesis: Comparative Analysis of Oversampling Techniques in Improving the Performance of Student Academic Risk Prediction Model
                           </Badge>
                           <Badge variant="secondary" className="mr-2 mb-2">
-                            Employee Promotion Classification
+                            Project: Binary Classification of Employee Promotion Decisions
                           </Badge>
                         </div>
 
@@ -169,7 +169,7 @@ const About = () => {
           }`}
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Certifications</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 gap-6 max-w-6xl mx-auto">
             <Card className="p-4 hover-lift">
               <CardContent className="p-0">
                 <div className="flex items-center justify-between flex-col space-y-3">
