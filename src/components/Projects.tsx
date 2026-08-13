@@ -13,7 +13,7 @@ const Projects = () => {
       description: "Developed a tool to predict the churn rate of telecommunications customers based on products purchased.",
       achievements: [
         "Identified key factors: tenure, product purchased, contract length, and payment method",
-        "Deployed Multinomial Naïve Bayes model with 86% recall and 70% accuracy",
+        "Deployed K-Nearest Neighbors model with 86% recall and 70% accuracy",
         "Built interactive dashboard using Python and Streamlit"
       ],
       technologies: ["Python", "Jupyter Notebook", "Streamlit", "Scikit-Learn"],

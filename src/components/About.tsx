@@ -23,8 +23,9 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Data Scientist passionate about machine learning, data analysis, and extracting valuable insights from complex datasets.
+            Data Scientist passionate about machine learning, AI automation, and turning complex data into strategic decisions.
           </p>
+
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -37,18 +38,23 @@ const About = () => {
             }`}
           >
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I'm a final-year Informatics student at Sepuluh Nopember Institute of Technology 
-              with a profound interest in data science. Through various projects involving 
-              regression, classification, clustering, and NLP, I've developed strong analytical 
-              skills and technical expertise.
+              I'm an Informatics fresh graduate from Sepuluh Nopember Institute of Technology
+              (GPA 3.66/4.00) with a profound interest in data science, data analysis, and machine
+              learning. Through projects involving regression, classification, clustering, and NLP,
+              I've honed strong analytical skills and technical expertise.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I graduated from the Data Science Bootcamp at Digital Skola with excellent grades 
-              and have practical experience as a Junior Data Scientist intern at Deepublish, 
-              where I worked on customer behavior analysis and predictive modeling. I also have experience as an artificial intelligence intern at PT Salam Pacific Indonesia Lines, 
-              where I developed automation systems to improve employee work efficiency.
+              I graduated from the Data Science Bootcamp at Digital Skola with excellent grades and
+              have practical experience as a Data Scientist Intern at Deepublish (customer behavior
+              analysis and predictive modeling) and as an Artificial Intelligence Intern at PT Salam
+              Pacific Indonesia Lines, where I built automation systems that improved employee
+              efficiency by 80%. I also work as a freelance AI & Machine Learning Tutor, mentoring
+              individuals in NLP and machine learning while guiding the end-to-end development of an
+              AI chatbot platform. I enjoy bridging technical AI/ML initiatives with strategic
+              business objectives and cross-functional project management.
             </p>
+
 
             {/* Statistics Cards moved here */}
             <div 
@@ -70,7 +76,7 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3+</div>
+                  <div className="text-2xl font-bold text-gray-900">4+</div>
                   <div className="text-sm text-gray-600">Certifications</div>
                 </CardContent>
               </Card>
@@ -78,8 +84,9 @@ const About = () => {
               <Card className="text-center p-4 hover-lift">
                 <CardContent className="p-0">
                   <GraduationCap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">3.64</div>
+                  <div className="text-2xl font-bold text-gray-900">3.66</div>
                   <div className="text-sm text-gray-600">GPA</div>
+
                 </CardContent>
               </Card>
             </div>
@@ -105,22 +112,23 @@ const About = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">
-                          Student of Informatics
+                          Bachelor of Informatics
                         </h4>
                         <p className="text-blue-600 font-medium">
                           Sepuluh Nopember Institute of Technology
                         </p>
                         <p className="text-gray-600 text-sm">Surabaya, Indonesia</p>
-                        <p className="text-gray-600 text-sm">Aug 2022 – Present</p>
-                        <p className="text-gray-700 mt-2">GPA: 3.64/4.00</p>
+                        <p className="text-gray-600 text-sm">Aug 2022 – Aug 2026</p>
+                        <p className="text-gray-700 mt-2">GPA: 3.66/4.00</p>
                         <div className="mt-3">
                           <Badge variant="secondary" className="mr-2 mb-2">
-                            Expert Staff GERIGI ITS
+                            Thesis: Oversampling for Academic Risk Prediction
                           </Badge>
                           <Badge variant="secondary" className="mr-2 mb-2">
                             Employee Promotion Classification
                           </Badge>
                         </div>
+
                       </div>
                     </div>
                   </CardContent>
@@ -161,14 +169,15 @@ const About = () => {
           }`}
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Certifications</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="p-4 hover-lift">
               <CardContent className="p-0">
                 <div className="flex items-center justify-between flex-col space-y-3">
                   <div className="flex items-center gap-3 w-full">
                     <Award className="h-5 w-5 text-green-600" />
                     <div>
-                      <p className="font-medium text-gray-900">Data Science Course</p>
+                      <p className="font-medium text-gray-900">Data Science Bootcamp</p>
+
                       <p className="text-gray-600 text-sm">Digital Skola</p>
                     </div>
                   </div>
@@ -248,7 +257,37 @@ const About = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="p-4 hover-lift">
+              <CardContent className="p-0">
+                <div className="flex items-center justify-between flex-col space-y-3">
+                  <div className="flex items-center gap-3 w-full">
+                    <Award className="h-5 w-5 text-green-600" />
+                    <div>
+                      <p className="font-medium text-gray-900">Introducing Generative AI Course</p>
+                      <p className="text-gray-600 text-sm">Udacity</p>
+                    </div>
+                  </div>
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="text-blue-600 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-700 w-full"
+                    asChild
+                  >
+                    <a 
+                      href="https://www.udacity.com/certificate" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-1" />
+                      View Credentials
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
+
         </div>
       </div>
     </section>
