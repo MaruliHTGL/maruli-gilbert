@@ -27,13 +27,13 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl text-gray-600 font-medium animate-fade-in animate-delay-400">
-              Data Scientist | Machine Learning & AI Engineer
+              Data Scientist
             </p>
           </div>
           
           <p className="text-lg text-gray-700 max-w-2xl text-justify animate-fade-in animate-delay-600">
-            Informatics fresh graduate from Sepuluh Nopember Institute of Technology (GPA 3.66/4.00)
-            with hands-on experience in data science, machine learning, NLP, and AI automation.
+            Informatics fresh graduate from Sepuluh Nopember Institute of Technology
+            with hands-on experience in data science, data analysis, machine learning, and management.
             Passionate about turning data into valuable insights and bridging AI initiatives with
             strategic business decisions.
           </p>
