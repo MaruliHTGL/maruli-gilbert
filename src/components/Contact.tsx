@@ -137,20 +137,21 @@ const Contact = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
-                  <p className="text-gray-700">Strong academic background in Informatics (GPA: 3.64/4.00)</p>
+                  <p className="text-gray-700">Informatics graduate from ITS with a strong academic record (GPA: 3.66/4.00)</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
-                  <p className="text-gray-700">Hands-on experience with 7+ data science projects</p>
+                  <p className="text-gray-700">Hands-on experience with 7+ data science, ML, and NLP projects</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
-                  <p className="text-gray-700">Proven ability to deploy ML models with high accuracy</p>
+                  <p className="text-gray-700">Proven impact: 80% efficiency gain through AI automation and deployed ML models with high accuracy</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 min-w-[4px]">•</span>
-                  <p className="text-gray-700">Leadership experience and strong communication skills</p>
+                  <p className="text-gray-700">Leadership, mentoring, and cross-functional project management experience</p>
                 </div>
+
               </CardContent>
             </Card>
           </div>

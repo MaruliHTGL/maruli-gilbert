@@ -25,7 +25,10 @@ const Skills = () => {
         { name: "Pandas", icon: "🐼" },
         { name: "NumPy", icon: "🔢" },
         { name: "Scikit-Learn", icon: "🤖" },
-        { name: "Streamlit", icon: "⚡" }
+        { name: "NLTK", icon: "🗣️" },
+        { name: "Streamlit", icon: "⚡" },
+        { name: "Laravel", icon: "🛠️" },
+        { name: "GitHub", icon: "🐙" }
       ]
     },
     {
@@ -42,8 +45,9 @@ const Skills = () => {
 
   const coursework = [
     "Data Science", "Machine Learning", "Python", "Model Deployment",
-    "Data Analysis", "SQL", "Business Intelligence", "Data Visualization"
+    "Data Analysis", "SQL", "Business Intelligence", "Data Visualization", "Management"
   ];
+
 
   return (
     <section id="skills" className="py-20 bg-gray-50">
