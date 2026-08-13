@@ -25,10 +25,7 @@ const Skills = () => {
         { name: "Pandas", icon: "🐼" },
         { name: "NumPy", icon: "🔢" },
         { name: "Scikit-Learn", icon: "🤖" },
-        { name: "NLTK", icon: "🗣️" },
         { name: "Streamlit", icon: "⚡" },
-        { name: "Laravel", icon: "🛠️" },
-        { name: "GitHub", icon: "🐙" }
       ]
     },
     {
