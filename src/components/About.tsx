@@ -257,7 +257,37 @@ const About = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="p-4 hover-lift">
+              <CardContent className="p-0">
+                <div className="flex items-center justify-between flex-col space-y-3">
+                  <div className="flex items-center gap-3 w-full">
+                    <Award className="h-5 w-5 text-green-600" />
+                    <div>
+                      <p className="font-medium text-gray-900">Introducing Generative AI Course</p>
+                      <p className="text-gray-600 text-sm">Udacity</p>
+                    </div>
+                  </div>
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="text-blue-600 border-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-700 w-full"
+                    asChild
+                  >
+                    <a 
+                      href="https://www.udacity.com/certificate" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-1" />
+                      View Credentials
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
+
         </div>
       </div>
     </section>
