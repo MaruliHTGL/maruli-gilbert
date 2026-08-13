@@ -39,8 +39,8 @@ const About = () => {
           >
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
               I'm an Informatics fresh graduate from Sepuluh Nopember Institute of Technology
-              with a profound interest in data science, data analysis, and machine
-              learning. Through projects involving regression, classification, clustering, and NLP,
+              with a profound interest in data science, data analysis, machine learning, and management. 
+              Through projects involving regression, classification, clustering, and NLP,
               I've honed strong analytical skills and technical expertise.
             </p>
             
